@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    </head>
+    <body class="page-body">  
+        <div class="title-block">
+            <h1 id="title"> Survey Form</h1>
+        </div>
+        <form id="survey-form">
+            <h2 id="description">Please fill out the form</h2>
+            <div class="first-input">
+            <div class="form-row-name">
+                <label for="name" class="left" id="name-label"> *Name:</label>
+                <input type="text"
+                        id="name"
+                        class="input-text "
+                        placeholder="Enter your name"
+                        required
+                />
+            </div>
+
+            <div class="form-row-email">
+                <label for="email" class="left" id="email-label"> *Email:</label>
+                <input type="email"
+                        id="email"
+                        class="input-text"
+                        placeholder="Enter your email"
+                        required
+                />
+            </div>
+
+            <div class="form-row-number">
+                <label for="number" class="left" id="number-label"> *Number:</label>
+                <input type="tel"
+                        id="number"  minlength="8" maxlength="10"
+                        class="input-text "
+                        placeholder="Enter your number"
+                        required
+                />
+            </div>
+
+            <div class="form-row-age">
+                <label for="age" class="left" id="age-label"> *Age:</label>
+                <input type="tel"
+                        id="age" minlength="1" maxlength="2"
+                        class="input-text "
+                        placeholder="Enter your age"
+                        required
+                />
+            </div>
+        </div>
+            <div id="dropdown">
+                <label>*What stream would you choose after school?
+                    <select>
+                        <option value="Science">Science</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Diploma">Diploma</option>
+                      </select>
+                </label>   
+            </div>
+            <div class="column-layout-radio">
+                <label class="radio-title">*Would you choose engineering as your career?</label>
+            <div class="radio">
+                <label> 
+                    <input type="radio" name="choose">Definitely 
+                </label>
+
+                <label> 
+                    <input type="radio" name="choose">No 
+                </label>
+
+                <label> 
+                    <input type="radio" name="choose">Prefer not to say   
+                </label>
+            </div>
+            </div>    
+
+            <div class="column-layout-checkbox">
+                    <label class="radio-title">*Which engineering would you choose?</label>
+                <div class="checkbox">
+                    <label> 
+                        <input type="checkbox" value="computer">Computer 
+                    </label>
+    
+                    <label> 
+                        <input type="checkbox" value="it">IT 
+                    </label>
+    
+                    <label> 
+                        <input type="checkbox" value="electronics">Electronics   
+                    </label>
+
+                    <label> 
+                            <input type="checkbox" value="extc">EXTC
+                    </label>
+                </div>
+                </div>  
+                <div class="textarea-block"> 
+                    <label class="textarea-title">Any comments or suggestions?</label>
+                    <div class="textarea">
+                        <textarea name="Comments" id="textarea" cols="30" rows="4" placeholder="Enter your comments"></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button id="submit">
+                        Submit
+                    </button>
+                </div>
+        </form>
+    </body>
+    <style>
+    
+    body{
+    margin: 0;
+    padding: 0;
+    background-color: #a9d7d1
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    padding-top:25px;
+    padding-left:15px;
+}
+.radio label{
+    padding-bottom: 5px;
+}
+.column-layout-radio{
+    display: flex;
+}
+.radio-title{
+    padding-top: 25px;
+}
+.column-layout-checkbox{
+    display: flex;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    padding-top:25px;
+    padding-left:15px;
+}
+.checkbox label{
+    padding-bottom: 5px;
+}
+.column-layout-textarea{
+    display: flex;
+}
+.textarea-block{
+    display: flex;
+    padding-top: 20px;
+}
+.textarea{
+    padding-left: 10px;
+}
+.submit{
+    text-align: center;       
+}
+#survey-form{
+    width: 600px;
+    margin: auto;
+    padding-top: 10px;
+    background-color: white;
+    font-family: 'Acme', sans-serif;
+    padding-left: 30px;
+}
+#title{
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+}
+#description{
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+}
+.form-row-name{
+    padding-bottom:10px;
+}
+.form-row-email{
+    padding-bottom: 10px;
+}
+.form-row-number{
+    padding-bottom: 10px;
+}
+.form-row-age{
+    padding-bottom: 10px;
+}
+.form-row-name input{
+    margin-left: 200px;
+}
+
+.form-row-email input{
+    margin-left: 202px;
+}
+.form-row-number input{
+    margin-left: 186px;
+}
+.form-row-age input{
+    margin-left: 214px;
+}
+.submit{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.submit button{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+    
+    </style>
+</html>
